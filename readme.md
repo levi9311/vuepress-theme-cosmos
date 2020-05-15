@@ -1,4 +1,4 @@
-# Cosmos theme for VuePress
+# Modified Cosmos theme for VuePress
 
 ## Install
 

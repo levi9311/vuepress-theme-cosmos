@@ -1,6 +1,6 @@
 {
-  "name": "vuepress-theme-interchain",
-  "version": "1.0.0",
+  "name": "@levi/vuepress-theme-cosmos",
+  "version": "1.0.1",
   "description": "Theme for VuePress static site generator used by interchain projects.",
   "main": "index.js",
   "scripts": {
@@ -39,8 +39,5 @@
     "v-runtime-template": "^1.10.0",
     "vuepress": "^1.4.1",
     "vuepress-plugin-sitemap": "^2.3.1"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
