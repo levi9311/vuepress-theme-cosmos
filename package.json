@@ -1,6 +1,6 @@
 {
-  "name": "@levi/vuepress-theme-cosmos",
-  "version": "1.0.1",
+  "name": "vuepress-theme-cosmos-levi",
+  "version": "1.0.0",
   "description": "Theme for VuePress static site generator used by interchain projects.",
   "main": "index.js",
   "scripts": {

@@ -18,111 +18,128 @@
 </template>
 
 <style lang="stylus" scoped>
-.container
-  display flex
-  flex-direction column
-  height 100%
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-.logo
-  padding 1rem 2rem
-  display flex
-  align-items center
+.logo {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
 
-  &__img
-    width 40px
-    height 40px
-    margin-right 0.75rem
+  &__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.75rem;
+  }
 
-  &__text
-    font-weight 500
+  &__text {
+    font-weight: 500;
+  }
+}
 
-.logo__container
-  position sticky
-  display block
-  background white
-  z-index 1
-  top 0
+.logo__container {
+  position: sticky;
+  display: block;
+  background: white;
+  z-index: 1;
+  top: 0;
 
-  &:after
-    position absolute
-    content ''
-    top 100%
-    left 0
-    right 0
-    background linear-gradient(to bottom, white, rgba(255, 255, 255, 0))
-    height 25px
+  &:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+    height: 25px;
+  }
+}
 
-.sidebar
-  padding-left 2rem
-  padding-right 2rem
-  overflow-x hidden
+.sidebar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow-x: hidden;
+}
 
-.items
-  flex-grow 1
-  padding-bottom 2rem
+.items {
+  flex-grow: 1;
+  padding-bottom: 2rem;
 
-  &.footer__compact__true
-    flex-grow 0
+  &.footer__compact__true {
+    flex-grow: 0;
+  }
+}
 
-.title
-  font-size 0.75rem
-  text-transform uppercase
-  letter-spacing 0.2em
-  color #666
-  margin-top 2rem
-  margin-bottom 0.5rem
+.title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #666;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
 
-.footer.footer__compact__true
-  padding-bottom 150px
-  bottom initial
-  margin-top 0
-  position relative
-  flex-grow 1
+.footer.footer__compact__true {
+  padding-bottom: 150px;
+  bottom: initial;
+  margin-top: 0;
+  position: relative;
+  flex-grow: 1;
+}
 
-.footer
-  height var(--sidebar-footer-height)
-  padding-top 1rem
-  padding-bottom 1rem
-  background-color var(--sidebar-bg)
-  position sticky
-  bottom 0
-  width 100%
-  display grid
-  grid-auto-flow column
-  padding-left 0.75rem
-  padding-right 0.75rem
-  align-items center
-  grid-auto-columns 1fr
+.footer {
+  height: var(--sidebar-footer-height);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--sidebar-bg);
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  align-items: center;
+  grid-auto-columns: 1fr;
 
-  &:before
-    content ''
-    position absolute
-    top -50px
-    left 0
-    right 0
-    bottom 100%
-    background linear-gradient(to top, white, rgba(255, 255, 255, 0))
-    pointer-events none
+  &:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+    pointer-events: none;
+  }
 
-  &__item
-    align-self flex-start
-    display flex
-    align-items center
-    flex-direction column
-    fill rgba(51, 54, 74, 0.4)
+  &__item {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    fill: rgba(51, 54, 74, 0.4);
 
-    &__icon
-      height 32px
-      margin-bottom 0.25rem
+    &__icon {
+      height: 32px;
+      margin-bottom: 0.25rem;
+    }
 
-    &:hover
-      fill var(--color)
+    &:hover {
+      fill: var(--color);
+    }
 
-    &__title
-      text-align center
-      font-size 0.6875rem
-      line-height 14px
-      letter-spacing 0.01em
+    &__title {
+      text-align: center;
+      font-size: 0.6875rem;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+    }
+  }
+}
 </style>
 
 <script>
@@ -145,30 +162,30 @@ export default {
         query: null
       },
       products: [
-        {
-          label: "sdk",
-          name: "Cosmos<br>SDK",
-          url: "https://docs.cosmos.network/",
-          color: "#5064FB"
-        },
-        {
-          label: "hub",
-          name: "Cosmos<br>Hub",
-          url: "https://hub.cosmos.network/",
-          color: "#BA3FD9"
-        },
-        {
-          label: "ibc",
-          name: "IBC<br>Protocol",
-          url: "https://github.com/cosmos/ics/tree/master/ibc",
-          color: "#E6900A"
-        },
-        {
-          label: "core",
-          name: "Tendermint<br>Core",
-          url: "https://docs.tendermint.com/",
-          color: "#00BB00"
-        }
+        // {
+        //   label: "sdk",
+        //   name: "Cosmos<br>SDK",
+        //   url: "https://docs.cosmos.network/",
+        //   color: "#5064FB"
+        // },
+        // {
+        //   label: "hub",
+        //   name: "Cosmos<br>Hub",
+        //   url: "https://hub.cosmos.network/",
+        //   color: "#BA3FD9"
+        // },
+        // {
+        //   label: "ibc",
+        //   name: "IBC<br>Protocol",
+        //   url: "https://github.com/cosmos/ics/tree/master/ibc",
+        //   color: "#E6900A"
+        // },
+        // {
+        //   label: "core",
+        //   name: "Tendermint<br>Core",
+        //   url: "https://docs.tendermint.com/",
+        //   color: "#00BB00"
+        // }
       ]
     };
   },
